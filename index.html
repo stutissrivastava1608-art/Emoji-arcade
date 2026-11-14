@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#100d24">
+  <title>EmojiSlots | Spin & Match</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <a class="brand" href="#">
+        <span class="brand-icon">🎰</span>
+        <span>Emoji<span class="brand-accent">Slots</span></span>
+      </a>
+      <span class="mode-pill">
+        <span class="status-dot"></span> ARCADE MODE
+      </span>
+    </header>
+
+    <section class="hero">
+      <p class="eyebrow">THE EMOJI ARCADE</p>
+      <h1>Spin. Match. <span>Celebrate.</span></h1>
+      <p class="subtitle">
+        Three reels. One lucky combination.
+        How many matches can you find?
+      </p>
+    </section>
+
+    <section class="game-card">
+      <div class="card-heading">
+        <div>
+          <p class="mini-label">YOUR CHALLENGE</p>
+          <h2>Emoji machine</h2>
+        </div>
+        <span class="round-tag">3 REELS</span>
+      </div>
+
+      <div class="machine">
+        <div class="reel-frame">
+          <div class="reel" id="reel-1">🍒</div>
+        </div>
+        <div class="reel-frame">
+          <div class="reel" id="reel-2">⭐</div>
+        </div>
+        <div class="reel-frame">
+          <div class="reel" id="reel-3">🍀</div>
+        </div>
+      </div>
+
+      <div class="reel-labels">
+        <span>REEL 01</span>
+        <span>REEL 02</span>
+        <span>REEL 03</span>
+      </div>
+
+      <div class="result-panel" id="result-panel" aria-live="polite">
+        <span class="result-icon" id="result-icon">✨</span>
+        <div>
+          <p class="result-title" id="result-title">
+            Ready when you are!
+          </p>
+          <p class="result-text" id="result-text">
+            Press SPIN to start your first round.
+          </p>
+        </div>
+      </div>
+
+      <button class="spin-button" id="spin-button" type="button">
+        <span class="button-icon">↻</span>
+        <span id="button-text">SPIN</span>
+      </button>
+
+      <p class="helper-text" id="helper-text">
+        A matching trio wins the jackpot!
+      </p>
+    </section>
+
+    <section class="how-to">
+      <div class="how-item">
+        <span class="how-icon">👆</span>
+        <div>
+          <strong>1. Spin</strong>
+          <small>Tap the button</small>
+        </div>
+      </div>
+
+      <div class="how-item">
+        <span class="how-icon">🎲</span>
+        <div>
+          <strong>2. Wait</strong>
+          <small>Watch the reels roll</small>
+        </div>
+      </div>
+
+      <div class="how-item">
+        <span class="how-icon">🏆</span>
+        <div>
+          <strong>3. Match</strong>
+          <small>Find three alike</small>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        MADE FOR THE LOVE OF CODE
+        <span>✦</span>
+        BUILT WITH VANILLA JAVASCRIPT
+      </p>
+    </footer>
+  </main>
+</body>
+</html>
